@@ -1,7 +1,9 @@
 import tkinter
 from random import randrange, randint
 
-canvas=tkinter.Canvas(width=800,height=600,bg='white')
+X_MAX, Y_MAX = 800, 600
+
+canvas=tkinter.Canvas(width=X_MAX,height=Y_MAX,bg='white')
 canvas.pack()
 
 xx,yy=0,0
@@ -74,6 +76,6 @@ def ciarka(event):
     global xx,yy
     canvas.create_line(xx,yy,x,y, width=hrubka, fill=farba)
     xx,yy=x,y
-    
+
+tlacitka()   
 canvas.bind('<Button-1>', vyber_tlacitka)
-tlacitka()
