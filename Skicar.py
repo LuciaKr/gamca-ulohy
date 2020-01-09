@@ -72,8 +72,8 @@ def vyber_tlacitka(event):
         pass
 
 def ciarka(event):
-    x,y=event.x,event.y
     global xx,yy
+    x,y=event.x,event.y
     canvas.create_line(xx,yy,x,y, width=hrubka, fill=farba)
     xx,yy=x,y
 
