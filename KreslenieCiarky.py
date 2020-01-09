@@ -12,6 +12,7 @@ def kliknutie(event):
     canvas.bind("<B1-Motion>",ciarka)
     xx,yy=event.x,event.y
 
+
 def ciarka(event):
     global xx,yy
     x,y=event.x,event.y
