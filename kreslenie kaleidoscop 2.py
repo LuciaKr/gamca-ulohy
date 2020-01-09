@@ -9,11 +9,11 @@ canvas.pack()
 def pohyb(event):
     x,y = event.x, event.y
     r=20
-    canvas.create_oval(x,y,x+r,y+r, fill='lavender')
+    canvas.create_oval(x-r,y-r,x+r,y+r, fill='lavender')
     a= X_MAX - x
-    canvas.create_oval(a-r,y-r,a,y, fill='sky blue')
+    canvas.create_oval(a-r,y-r,a+r,y+r, fill='sky blue')
     b= Y_MAX - y
-    canvas.create_oval(x-r,b-r,x,b, fill='light yellow')
+    canvas.create_oval(x-r,b-r,x+r,b+r, fill='light yellow')
     
     
 
